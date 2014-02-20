@@ -9,6 +9,7 @@ install:
   - python setup.py install
   - pip install nose coverage coveralls
 # command to run tests
+
 script: coverage run `which nosetests`
 after_success:
   - coveralls
