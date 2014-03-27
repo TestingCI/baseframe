@@ -5,6 +5,9 @@ python:
   - "pypy"
 # command to install dependencies
 
+before_install:
+  - pip install requirements.txt
+  
 install:
   
   - python setup.py install
